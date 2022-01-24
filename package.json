@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --config vite.dev.config.ts --open",
-    "build": "tsc && vite build",
+    "build": "tsc && vite --config vite.production.config.ts build",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.jsx,.ts,.tsx ."
   },
   "author": {
