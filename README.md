@@ -18,16 +18,16 @@ should contain "env_" prefix.
 ## Installation
 
 ```sh
-npm i
+npm install
 ```
 
 ## Development
 
 ```sh
-npm dev
+npm run dev
 ```
 
 ## Build
 
 ```sh
-npm build
+npm run build
