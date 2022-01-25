@@ -1,6 +1,6 @@
-# Vite + React + TypeScript starter
+# 🚀 Vite + React + Ant Design + TypeScript starter
 
-Note: SASS & rc config file support is included.
+Note: rc config file support is included.
 To use rc config file, rename .servicerc.example to .servicerc. All root variables
 should contain "env_" prefix.
 
