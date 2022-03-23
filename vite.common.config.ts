@@ -1,6 +1,7 @@
 import rc from "rc";
 import react from "@vitejs/plugin-react";
 import { name as service, version } from "./package.json";
+import tsconfig from "./tsconfig.json";
 const rawConfigs = rc(
   "service",
   {
@@ -19,6 +20,18 @@ const appConfigs = Object.keys(rawConfigs).reduce((configs, key) => {
   }
   return configs;
 }, {});
+
+const { build } = (() => {
+  const build = {
+    target: "es6",
+    outDir: "dist",
+  };
+  if (tsconfig?.compilerOptions && tsconfig?.compilerOptions?.target)
+    build["target"] = tsconfig?.compilerOptions.target;
+  return {
+    build,
+  };
+})();
 
 export default {
   plugins: [react()],
