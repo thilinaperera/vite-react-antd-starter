@@ -17,17 +17,30 @@ should contain "env_" prefix.
 
 ## Installation
 
+First, if you want to ensure you're using the correct Node.js and package manager versions, [install Volta](http://volta.sh)
+
+```sh
+# install Volta (macos/unix only)
+curl https://get.volta.sh | bash
+
+# For Windows, download and run the Windows installer and follow the instructions.
+
+# install Node
+volta install node
+```
+### Install Dependencies
+
 ```sh
 npm install
 ```
 
-## Development
+### Development
 
 ```sh
 npm run dev
 ```
 
-## Build
+### Build
 
 ```sh
 npm run build
